@@ -1,0 +1,19 @@
+
+.conteiner-header{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.header-HEROLO{
+    margin-right:50% ;
+}
+
