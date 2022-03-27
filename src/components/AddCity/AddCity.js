@@ -3,20 +3,21 @@ import { LogineContext } from "../../Contexts/LogineContext";
 
 function AddCity() {
 
-  const {setFavorites} = useContext(LogineContext);
+  const {setFavourites} = useContext(LogineContext);
   const {city} = useContext(LogineContext);
 
+
   return (
-    <div className="Favorites">
-          <button
-        className="button_add_city_ToFavorites"
+
+        <button
+        className="add_to_favourites"
         onClick={() => {
-          setFavorites((arr) => [...arr, city ]);
+          setFavourites((arr) => [...arr, city ]);
         }}
       >
         Add To Your Favorits
       </button>      
-    </div>
+
   );
 }
 export default AddCity;

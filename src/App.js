@@ -13,10 +13,13 @@ import {
 } from "react-router-dom";
 
 function App() {
+
+ //main app code
   const [temps, setTemps] = useState([]);
   const [mode, setMode] = useState([]);
   const [city, setCity] = useState("");
-  const [favourites, setFavorites] = useState([]);
+  const [favourites, setFavourites] = useState([]);
+  const [days, setDays] = useState([]);
 
 
 
@@ -31,7 +34,9 @@ function App() {
           mode,
           setMode,
           favourites,
-          setFavorites,
+          setFavourites,
+          days, 
+          setDays,               
         }}
       >
         <Router>
@@ -40,8 +45,13 @@ function App() {
           <Switch>
             <Favorites path="/Favorites" component={withRouter(Favorites)} />
             <Weather path="/Weather" component={withRouter(Weather)} />
+            
+
           </Switch>
         </Router>
+
+
+
       </LogineContext.Provider>
     </div>
   );

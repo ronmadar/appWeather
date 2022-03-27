@@ -1,8 +1,18 @@
 /* weather styles*/
 .weather-container {
   display: flex;
+  flex-direction: column;
   gap: 15px;
   padding: 30px;
+}
+.add_to_favourites{
+   max-width: 200px;
+}
+
+.wrap-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .card {
   width: 19%;
